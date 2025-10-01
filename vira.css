@@ -218,14 +218,29 @@ body {
   display: block;
 }
 
-/* We'll place slides in a row via JS transform on container */
-.slider > .slide > .panel {
-  width: 50%;
-  height: 100%;
+.comic-slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.comic-slider .slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  background: #000;
+}
+
+.comic-slider .slide img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* progress dots */
@@ -320,4 +335,5 @@ body {
   max-height: 100%;
   object-fit: contain;
 }
+
 
