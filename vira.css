@@ -197,21 +197,6 @@ body {
   margin-right: 40px;
 }
 
-/* Slider container */
-.slider {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  min-height: auto;
-  background: var(--accent);
-  border-radius: 14px;
-  overflow: hidden;
-  position: relative;
-  touch-action: pan-y;
-  box-shadow: var(--card-shadow);
-  margin: 0 auto;
-}
-
 /* progress dots */
 .progress-dots {
   display: flex;
@@ -270,8 +255,9 @@ body {
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
   width: 100%;
-  height: 100vh; /* satu halaman penuh */
+  height: 100dvh; /* satu halaman penuh */
   margin: 0;
   padding: 0;
 }
@@ -290,4 +276,5 @@ body {
   height: 100%; /* menutupi tinggi layar */
   object-fit: contain; /* tetap proporsional */
 }
+
 
